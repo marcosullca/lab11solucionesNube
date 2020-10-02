@@ -1,6 +1,14 @@
 @extends('base')
 @section('main')
-<div>    <a style="margin: 19px;" href="{{ route('contacts.create')}}" class="btn btn-primary">Agregar Contactos</a></div>
+<nav class="navbar navbar-light mt-3">
+    <a class="btn btn-primary" href="{{ route('contacts.create')}}" >
+        Agregar Contactos
+    </a>
+    <a class="navbar-brand btn btn-outline-info text-info" href="/login" >
+        Login
+      </a>
+  </nav>
+<div>  
 <div class="row"><div class="col-sm-12">    
     <h1 class="d-flex justify-content-center py-4">Lista de Contactos</h1>      
     <table class="table table-dark">    

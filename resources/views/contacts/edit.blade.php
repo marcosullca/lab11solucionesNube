@@ -13,8 +13,8 @@
         </div>        
         <br />         
         @endif        
-       <div class="card">
-    <div class="card-body">
+       <div class="card bg-dark">
+    <div class="card-body ">
         
         <form method="post" action="{{ route('contacts.update', $contact->id) }}">            
             {{method_field('PATCH')}}       

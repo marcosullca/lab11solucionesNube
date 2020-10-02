@@ -14,4 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/login',function(){
+    return view('contacts.login');
+});
+
 Route::resource('contacts', 'ContactController');

@@ -1,5 +1,6 @@
 @extends('base')
 @section('main')
+
 <div class="row"> <div class="col-sm-8 offset-sm-2">   
      <h1 class="d-flex justify-content-center py-4">Agregar un Contacto</h1>  <div>   
           @if ($errors->any())     
