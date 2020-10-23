@@ -48,7 +48,7 @@ class ContactController extends Controller
             'telefono'=>$request->get('telefono')
         ]);
         $contact->save();
-        return redirect('/contacts')->with('success','Contacto Guardado');
+        return redirect('/contacts')->with('success','Producto registrado');
     }
 
     /**
@@ -95,7 +95,7 @@ class ContactController extends Controller
         $contact->correo=$request->get('correo');
         $contact->telefono=$request->get('telefono');
         $contact->save();
-        return redirect('/contacts')->with('success','Contacto Actualizado');
+        return redirect('/contacts')->with('success','Producto Actualizado');
     }
     /**
      * Remove the specified resource from storage.
@@ -107,6 +107,6 @@ class ContactController extends Controller
     {
         $contact=Contact::find($id);
         $contact->delete();
-        return redirect('/contacts')->with('success','Contacto Eliminado');
+        return redirect('/contacts')->with('success','Producto Eliminado');
     }
 }

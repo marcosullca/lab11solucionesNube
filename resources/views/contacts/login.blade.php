@@ -13,13 +13,16 @@
                       <label for="Apellidos">Apellidos:</label>             
                           <input type="text" class="form-control" name="Apellidos" id="Apellidos"/>         
                               </div>
-                              <div class="form-group">                
-                                <label for="Password">Password:</label>             
-                                    <input type="password" class="form-control" name="Password" id="Password"/>         
-                                        </div>
-            <a href="/contacts" class="d-flex justify-content-center btn btn-primary py-2 mt-5">INICIAR </a>
+       <div class="form-group">                
+             <label for="Password">Password:</label>             
+                      <input type="password" class="form-control" name="Password" id="Password"/>         
+                           </div>
+                    <div class="form-group d-flex justify-content-center">       
+                                 <div class="col-md-6">
+                                    <a href="/contacts" class="d-flex justify-content-center btn btn-primary py-2 mt-5">INICIAR </a> 
+                                 </div>                                                 
+                 </div>                                        
+
             </div>
         </div>
-      
-         
 @endsection

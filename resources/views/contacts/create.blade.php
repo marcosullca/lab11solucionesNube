@@ -18,19 +18,19 @@
                     <form method="post" action="{{ route('contacts.store') }}">         
                         {{ csrf_field() }}        
                     <div class="form-group">                
-                        <label for="nombres">Nombres:</label>             
+                        <label for="nombres">Nombre: </label>             
                             <input type="text" class="form-control" name="nombres" id="nombres"/>         
                                 </div>
                             <div class="form-group">             
-                                <label for="apellidos">Apellidos:</label>             
+                                <label for="apellidos">Descripcion:</label>             
                                     <input type="text" class="form-control" name="apellidos" id="apellidos"/>      
                                         </div>
                                     <div class="form-group">              
-                                        <label for="correo">Correo:</label>            
+                                        <label for="correo">Precio:</label>            
                                     <input type="text" class="form-control" name="correo" id="correo"/>     
                                         </div>     
                                         <div class="form-group">              
-                                            <label for="telefono">Telefono:</label>            
+                                            <label for="telefono">Stock:</label>            
                                         <input type="text" class="form-control" name="telefono" id="telefono"/>     
                                             </div> 
                                           <button type="submit" class="btn btn-primary">Agregar Contacto</button> 

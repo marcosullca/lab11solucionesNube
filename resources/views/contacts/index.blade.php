@@ -2,23 +2,48 @@
 @section('main')
 <nav class="navbar navbar-light mt-3">
     <a class="btn btn-primary" href="{{ route('contacts.create')}}" >
-        Agregar Contactos
+        Agregar Productos
     </a>
-    <a class="navbar-brand btn btn-outline-info text-info" href="/login" >
-        Login
-      </a>
+
+    @if (Route::has('login'))
+                    @auth
+                    <li class="navbar-brand btn btn-outline-info text-inf dropdown">
+                        <a href="#" class="dropdown-toggle text-light" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
+                            {{ Auth::user()->name }} <span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+                                <a href="{{ route('logout') }}"
+                                    onclick="event.preventDefault();
+                                             document.getElementById('logout-form').submit();" class="text-dark btn">
+                                    Cerrar Sesión
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    {{ csrf_field() }}
+                                </form>
+                            
+                        </ul>
+                    </li>
+                      @else
+                      <a class="navbar-brand btn btn-outline-info text-info" href="/login" >
+                        Iniciar Sesión
+                      </a>
+                    @endauth
+            @endif
   </nav>
 <div>  
 <div class="row"><div class="col-sm-12">    
-    <h1 class="d-flex justify-content-center py-4">Lista de Contactos</h1>      
+    <h1 class="d-flex justify-content-center py-4">Lista de Productos</h1>      
     <table class="table table-dark">    
         <thead>       
         <tr>          
             <td>ID</td>          
-            <td>Nombres</td>       
-                <td>Apellidos</td>        
-                <td>Correo</td>   
-                <td>Telefono</td>              
+            <td>nombre</td>       
+                <td>descripcion</td>        
+                <td>precio</td>   
+                <td>stock</td>              
             <td colspan = 2>Acciones</td>       
         </tr>    
     </thead>    
