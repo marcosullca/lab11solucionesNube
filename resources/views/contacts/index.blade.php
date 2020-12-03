@@ -2,7 +2,7 @@
 @section('main')
 <nav class="navbar navbar-light mt-3">
     <a class="btn btn-primary" href="{{ route('contacts.create')}}" >
-        Agregar Productos
+        Contacto Nuevo
     </a>
 
     @if (Route::has('login'))
@@ -35,15 +35,15 @@
   </nav>
 <div>  
 <div class="row"><div class="col-sm-12">    
-    <h1 class="d-flex justify-content-center py-4">Lista de Productos</h1>      
+    <h1 class="d-flex justify-content-center py-4">Lista de Contactos</h1>      
     <table class="table table-dark">    
         <thead>       
         <tr>          
             <td>ID</td>          
-            <td>nombre</td>       
-                <td>descripcion</td>        
-                <td>precio</td>   
-                <td>stock</td>              
+            <td>Nombres</td>       
+                <td>Apellidos</td>        
+                <td>Correo</td>   
+                <td>Telefono</td>              
             <td colspan = 2>Acciones</td>       
         </tr>    
     </thead>    

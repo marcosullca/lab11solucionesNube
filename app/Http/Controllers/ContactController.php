@@ -39,13 +39,15 @@ class ContactController extends Controller
             'nombres'=>'required',
             'apellidos'=>'required',
             'correo'=>'required',
-            'telefono'=>'required'
+            'telefono'=>'required',
+            'imagen'=>'required'
         ]);
         $contact=new Contact([
             'nombres'=>$request->get('nombres'),
             'apellidos'=>$request->get('apellidos'),
             'correo'=>$request->get('correo'),
-            'telefono'=>$request->get('telefono')
+            'telefono'=>$request->get('telefono'),
+            'imagen'=>$request->get('imagen')
         ]);
         $contact->save();
         return redirect('/contacts')->with('success','Producto registrado');

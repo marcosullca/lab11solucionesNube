@@ -20,19 +20,19 @@
             {{method_field('PATCH')}}       
             {{ csrf_field() }}           
             <div class="form-group">                
-<label for="nombres">Nombre:</label>                
+<label for="nombres">Nombres:</label>                
     <input type="text" class="form-control" name="nombres" id="nombres" value={{ $contact->nombres }} />            
 </div>            
     <div class="form-group">                
-<label for="apellidos">Descripcion:</label>                
+<label for="apellidos">Apellidos:</label>                
 <input type="text" class="form-control" name="apellidos" id="apellidos" value={{ $contact->apellidos }} />           
 </div>            
 <div class="form-group">                
-<label for="correo">Precio:</label>                
+<label for="correo">Correo: </label>                
 <input type="text" class="form-control" name="correo" id="correo" value={{ $contact->correo }} />            
 </div>            
 <div class="form-group">                
-<label for="telefono">Stock:</label>                
+<label for="telefono">Telefono:</label>                
 <input type="text" class="form-control" name="telefono" id="telefono" value={{ $contact->telefono }} />            
 </div>                       
 <button type="submit" class="btn btn-primary">Actualizar</button>        

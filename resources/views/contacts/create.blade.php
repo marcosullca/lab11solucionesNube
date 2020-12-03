@@ -18,21 +18,25 @@
                     <form method="post" action="{{ route('contacts.store') }}">         
                         {{ csrf_field() }}        
                     <div class="form-group">                
-                        <label for="nombres">Nombre: </label>             
+                        <label for="nombres">Nombres: </label>             
                             <input type="text" class="form-control" name="nombres" id="nombres"/>         
                                 </div>
                             <div class="form-group">             
-                                <label for="apellidos">Descripcion:</label>             
+                                <label for="apellidos">Apellidos:</label>             
                                     <input type="text" class="form-control" name="apellidos" id="apellidos"/>      
                                         </div>
                                     <div class="form-group">              
-                                        <label for="correo">Precio:</label>            
+                                        <label for="correo">Correo:</label>            
                                     <input type="text" class="form-control" name="correo" id="correo"/>     
                                         </div>     
                                         <div class="form-group">              
-                                            <label for="telefono">Stock:</label>            
+                                            <label for="telefono">Telefono:</label>            
                                         <input type="text" class="form-control" name="telefono" id="telefono"/>     
                                             </div> 
+                                            <div class="form-group">              
+                                                <label for="imagen">Imagen:</label>            
+                                            <input type="file" class="form-control" name="imagen" id="imagen"/>     
+                                                </div> 
                                           <button type="submit" class="btn btn-primary">Agregar Contacto</button> 
                                                 </form>  
                 </div>

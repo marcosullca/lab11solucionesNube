@@ -19,10 +19,10 @@ class CreateContactsTable extends Migration
             $table->string('apellidos');
             $table->string('correo');
             $table->string('telefono');
+            $table->string('imagen');
             $table->timestamps();
         });
     }
-
     /**
      * Reverse the migrations.
      *
